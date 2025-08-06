@@ -543,14 +543,64 @@ header.scrolled {
 
 .project-title {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     color: white;
+    opacity: 1;
+}
+
+.bkg-tscape {
+    font-size: 1.5rem;
+    /* margin-bottom: 0.5rem; */
+    /* color: white; */
+    /* background: #05508dce; */
+    /* border: 1px solid white; */
+    /* opacity: 0.5; */
+    /* padding: 3px; */
+    padding-left: 6px;
+    padding-right: 6px;
+    height: fit-content;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.bkg-dms {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* color: white; */
+    background: #209447ce;
+    border: 1px solid white;
+    /* opacity: 0.5; */
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: fit-content;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.bkg-veil {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* color: white; */
+    background: #604679ce;
+    border: 1px solid white;
+    /* opacity: 0.5; */
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: fit-content;
+    border-radius: 15px;
+    width: fit-content;
 }
 
 .project-description {
     margin-bottom: 1.5rem;
     opacity: 0.9;
     font-size: 0.95rem;
+    background: #0b161fa9;
+    border-radius: 15px;
+    color: white;
+    padding: 4px;
 }
 
 .project-tech {
