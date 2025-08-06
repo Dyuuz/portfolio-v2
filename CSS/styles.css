@@ -175,8 +175,10 @@ header.scrolled {
     background: linear-gradient(90deg, var(--primary), var(--primary-light));
     padding: 0.7rem 1.5rem;
     border-radius: 50px;
+    /* padding: 8px; */
     font-weight: 600;
     transition: all 0.3s ease;
+    /* font-size: 0.5rem; */
 }
 
 .nav-cta:hover {
@@ -655,6 +657,43 @@ header.scrolled {
     opacity: 0.8;
     font-size: 0.9rem;
 }
+
+.contact-text a {
+    /* text-decoration: none; */
+    opacity: 0.9;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.contact-text a p {
+    /* text-decoration: none; */
+    opacity: 0.9;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.contact-text a p:hover {
+    color: var(--secondary);
+}
+
+.contact-text a:hover {
+    color: var(--secondary);
+}
+
+/* .contact-text a p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.contact-text a p:hover::after {
+    width: 100%;
+} */
 
 .contact-form {
     padding: 2rem;
