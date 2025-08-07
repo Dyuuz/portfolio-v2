@@ -387,6 +387,10 @@ header.scrolled {
     margin-top: 2rem;
 }
 
+.pl-icon {
+    color: #08ffdeff;;
+}
+
 .skills-title {
     font-size: 1.2rem;
     margin-bottom: 1rem;
