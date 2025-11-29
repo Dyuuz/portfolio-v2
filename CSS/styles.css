@@ -639,6 +639,9 @@ nav {
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
+.experience-card .timeline-location {
+    color: rgb(255, 255, 255);
+}
 
 .experience-card .skill-tg {
     margin-bottom: 15px;
