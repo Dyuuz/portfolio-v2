@@ -1,64 +1,112 @@
-// Mobile Navigation
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
+// Mobile Navigation Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-menuBtn.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    menuBtn.innerHTML = navLinks.classList.contains('active') ? 
-        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
 });
 
-// Close mobile menu when clicking a link
+// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
-        menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
     });
 });
 
-// Sticky Header
+// Header scroll effect
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
-    header.classList.toggle('scrolled', window.scrollY > 50);
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });
 
-// Smooth Scrolling
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         
         const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
         const targetElement = document.querySelector(targetId);
-        
-        window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Animate elements when scrolling
-const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.glass-card, .section-title, .section-subtitle');
-    
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
-        
-        if (elementPosition < screenPosition) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
         }
     });
-};
-
-// Set initial state
-document.querySelectorAll('.glass-card, .section-title, .section-subtitle').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease';
 });
 
-// Run on load and scroll
-window.addEventListener('load', animateOnScroll);
-window.addEventListener('scroll', animateOnScroll);
+// Form submission with Axios
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const successModal = document.getElementById('successModal');
+const closeModal = document.getElementById('closeModal');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Show loading state
+    submitBtn.innerHTML = 'Sending...';
+    submitBtn.disabled = true;
+    
+    try {
+        // In a real application, you would send this data to a server
+        // For demo purposes, we'll simulate an API call
+        await axios.post('https://jsonplaceholder.typicode.com/posts', {
+            name,
+            email,
+            subject,
+            message
+        });
+        
+        // Show success modal
+        successModal.style.display = 'flex';
+        
+        // Reset form
+        contactForm.reset();
+    } catch (error) {
+        successModal.style.display = 'flex';
+    } finally {
+        // Reset button state
+        submitBtn.innerHTML = 'Send Message';
+        submitBtn.disabled = false;
+    }
+});
+
+// Close modal
+closeModal.addEventListener('click', () => {
+    successModal.style.display = 'none';
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    if (e.target === successModal) {
+        successModal.style.display = 'none';
+    }
+});
+
+// Mirror text effect
+const mirrorTexts = document.querySelectorAll('.mirror-text');
+mirrorTexts.forEach(text => {
+    text.setAttribute('data-text', text.textContent);
+});
+
+// Parallax effect for hero background
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroBg = document.querySelector('.hero-bg');
+    if (heroBg) {
+        heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+});
