@@ -1,454 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oyesunle Lekan Portfilio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel='stylesheet' type='text/css' href='CSS/styles.css' >
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Oyesunle Lekan — Backend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel='stylesheet' type='text/css' href='CSS/styles.css' >
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">OYE<span></span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="mirror-text" data-text="Oyesunle Lekan">Oyesunle Lekan</h1>
-                <h2>Full Stack Developer</h2>
-                <p>Building scalable, future-ready web applications with Python Frameworks. I can transform your concepts into digital solutions that speak for your brand.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I'm a passionate full stack developer with over 2 years of experience building web applications that solve real-world problems. My approach combines technical expertise with creative problem-solving.</p>
-                    <p>I specialize in creating seamless user experiences with modern technologies, ensuring that every project is scalable, maintainable, and delivers value to users.</p>
-                    <div class="skills">
-                        <span class="skill"><i class="fab fa-python python-icon"></i> Python</span>
-                        <span class="skill"><i class="devicon-java-plain python-icon"></i> Java</span>
-                        <span class="skill"><i class="fab fa-js-square js-icon"></i> JavaScript</span>
-                        <span class="skill"><i class="fas fa-server postgres-icon"></i> PostgreSQL</span>
+<nav>
+  <div class="nav-logo">Lekan<span>.dev</span></div>
+  <ul class="nav-links">
+    <li><a href='/resume/LekanOye26_Feb.pdf' download>Resume</a></li>
+    <li class="nav-link"><a href="#skills" >Skills</a></li>
+    <li class="nav-link"><a href="#experience">Experience</a></li>
+    <li class="nav-link"><a href="#projects">Projects</a></li>
+    <li class="nav-link"><a href="#services">Services</a></li>
+    <li class="nav-link"><a href="#testimonials">Testimonials</a></li>
+    <li class="nav-link"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-                        <span class="skill"><i class="devicon-django-plain django-icon"></i> Django</span>
-                        <span class="skill"><i class="devicon-fastapi-plain react-icon"></i> FastAPI</span>
-                        <span class="skill"><i class="fas fa-network-wired rest-icon"></i> REST API</span>
-                        <span class="skill"><i class="fas fa-database mongo-icon"></i> Database</span>
-                        
-                        <span class="skill"><i class="fab fa-html5 html-icon"></i> HTML</span>
-                        <span class="skill"><i class="fab fa-css3-alt css-icon"></i> CSS</span>
-                        <span class="skill"><i class="fab fa-react react-icon"></i> React</span>
-                        <span class="skill"><i class="fas fa-chart-bar data-icon"></i> Data Sci</span>
-                        <span class="skill"><i class="fab fa-docker docker-icon"></i> Docker</span>
-                        <!-- <span class="skill"><i class="fab fa-node-js node-icon"></i> Node.js</span> -->
-                        <span class="skill"><i class="fab fa-git git-icon"></i> Git</span>
-                        <span class="skill"><i class="devicon-github-original git-icon"></i> CI/CD</span>
-                        <span class="skill"><i class="devicon-linux-plain linux-icon"></i> Linux</span>
-                        <span class="skill"><i class="fab fa-aws aws-icon"></i> AWS</span>
-                        
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="img/portfolio/selfie1.jpg" alt="Oyesunle Lekan" class="profile-img">
-                    <div class="mirror-box"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="services-container">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend Solutions</h3>
-                    <p>Robust server-side development with scalable architectures, databases, and API integrations for your business needs.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Custom web applications built with modern technologies like Django and FastAPI to deliver high performance and smooth user experiences.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <p>Creating websites that work perfectly on all devices, from desktop to mobile, ensuring accessibility for all users.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/mindybrows.jpg" alt="MindyBrows" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>MindyBrows</h3>
-                        <p>Platform for a makeup brand that manages class bookings, payments, and client services that delivers a seamless experience while automating workflows behind the scenes.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python Scripting</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">Vanilla JS</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mindybrows.onrender.com/" class="btn">Live Demo</a>
-                            <a class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/veil.jpg" alt="CoinBeacon" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>CoinBeacon</h3>
-                        <p>Platform that shows real-time USDT/NGN rates across Nigerian crypto exchanges, 
-                            helping you track the best deals instantly.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Playwright</span>
-                            <span class="tech-tag">Selenium</span>
-                            <span class="tech-tag">PSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <!-- <a href="https://coinbeacon.up.railway.app/rates" class="btn">Live Demo</a> -->
-                            <a href="https://coinbeacon.onrender.com/rates" class="btn">Live Demo</a>
-                            <a href="https://github.com/Dyuuz/CoinBeacon.git" class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/BlockSigma.jpg" alt="BlockSigma" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>BlockSigma</h3>
-                        <p>Automated crypto price prediction system that leverages machine learning to forecast 
-                            crypto trends with precision and real-time analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Automation</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://blocksigma-vyk5.onrender.com/" class="btn">Live Demo</a>
-                            <a href="https://github.com/Dyuuz/BlockSigma.git" class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/dms.jpg" alt="Job Management System" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>Job Management System</h3>
-                        <p>A web-based platform for managing documents, job applications/managing jobs and workforce. WIP</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">Rest Framework</span>
-                            <span class="tech-tag">JS</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <!-- <a href="https://job-dms.up.railway.app" class="btn">Live Demo</a> -->
-                            <a href="https://job-dms.onrender.com" class="btn">Live Demo</a>
-                            <a href="https://github.com/Dyuuz/JOB-DMS.git" class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/entry.jpg" alt="TechScape" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>TechScape</h3>
-                        <p>Your gateway to the evolving world of tech articles covering software, hardware,
-                            AI, blockchain, innovation, career tips, culture, and more.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">CKEditor5</span>
-                        </div>
-                        <div class="project-links">
-                            <!-- <a href="https://techscape.up.railway.app" class="btn">Live Demo</a> -->
-                            <a href="https://techscape-9akf.onrender.com" class="btn">Live Demo</a>
-                            <a href="https://github.com/Dyuuz/Tech-Scape-Blog.git" class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="img/portfolio/chatapi.png" alt="ChatAPI" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>ChatAPI</h3>
-                        <p>Platform that supports user registration with an initial token balance, 
-                            and enables authenticated users to chat with AI by spending tokens.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">PostMan</span>
-                            <span class="tech-tag">Rest API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://chatapi-3rty.onrender.com" class="btn">Live Demo</a>
-                            <a href="https://github.com/Dyuuz/ChatAPI.git" class="btn btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <p class="section-subtitle">
-                    My professional journey through the world of technology
-            </p>
-            <div class="experience-container">
-                <div class="experience-card">
-                    <h3>ALX</h3>
-                    <h3 class="skill-tg">Advanced Backend Engineering</h3>
-                    <span class="experience-date">July 2025 - February 2026</span>
-                    <p class="timeline-location">Skills: Python, Django, JS, SQL, Kubernetes, GitHub Actions, Docker, Jenkins</p>
-                    <p>I'm advancing my back-end development skills by building scalable systems and robust APIs, deepening my 
-                    expertise in Python, JavaScript, SQL, microservices, and DevOps tools like Docker and Kubernetes. Through 
-                    hands-on projects, I'm refining my abilities in database management, API design, and system automation 
-                    to deliver high-performance, reliable back-end solutions for real-world applications.I'm also learning to
-                     architect systems that are not only efficient but flexible enough to grow with evolving product demands.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Early Startup</h3>
-                    <h3 class="skill-tg">Backend Developer</h3>
-                    <span class="experience-date">June 2025 - July 2025</span>
-                    <p class="timeline-location">Tools: Python, Django, PostMan, Git, Docker, AWS</p>
-                    <p>I built automated data pipelines and machine learning workflows for a cryptocurrency price prediction 
-                    system, leveraging AWS EC2 to enhance backend scalability, optimize data flow, and reduce latency. 
-                    The system works on scheduled automation processes that handled periodic data collection, cleaning and transformation.
-                    These pipelines ensured timely and consistent model execution, significantly 
-                    improving the reliability and responsiveness of the system which enabled the delivery of up-to-date predictions through 
-                    APIs for real-time consumption.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>INSBRID</h3>
-                    <h3 class="skill-tg">Full Stack Developer</h3>
-                    <span class="experience-date">May 2025 - June 2025</span>
-                    <p class="timeline-location">Tools: Python, Django, Rest Framework, GeoLocation, Git</p>
-                    <p>I developed a robust backend architecture for a shipping and logistics system using Django and REST APIs with integrated 
-                    geolocation functionality to support real-time location tracking and accurate delivery mapping.
-                    Connected the backend with dynamic frontend interfaces using Vue.js and HTMX, ensuring a responsive user experience for vendors, 
-                    drivers, and clients. The system facilitated seamless data exchange across logistics workflows, improving delivery accuracy and 
-                    streamlining fleet management.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Don Clem Technology</h3>
-                    <h3 class="skill-tg">Backend Developer</h3>
-                    <span class="experience-date">February 2025 - June 2025</span>
-                    <p class="timeline-location">Tools: Python, Django, Rest Framework, PostMan, Git, Docker</p>
-                    <p>I developed a robust backend architecture for a shipping and logistics system using Django and REST APIs with integrated 
-                    geolocation functionality to support real-time location tracking and accurate delivery mapping.
-                    Connected the backend with dynamic frontend interfaces using Vue.js and HTMX, ensuring a responsive user experience for vendors, 
-                    drivers, and clients. The system facilitated seamless data exchange across logistics workflows, improving delivery accuracy and 
-                    streamlining fleet management.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Smart CodeCademy</h3>
-                    <h3 class="skill-tg">Backend Intership Program</h3>
-                    <span class="experience-date">April 2024 - October 2024</span>
-                    <p class="timeline-location">Skills learned: Python, Django, Javascript, SQL</p>
-                    <p>Completed a hands-on internship at a tech-focused hub, where I advanced my skills in Python, Django, JavaScript, and SQL 
-                    through real-world projects and practical training.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Let's Grow More(LGM)</h3>
-                    <h3 class="skill-tg">Backend Intership Program</h3>
-                    <span class="experience-date">August 2023</span>
-                    <p class="timeline-location">Skills learned: Java, Spring, Git</p>
-                    <p>I developed GUI-based applications for desktop(Windows OS) using Java and the Spring Framework, applying core concepts of object-oriented programming and 
-                    design patterns. Gained hands-on experience in building interactive user interfaces and backend logic while exploring and 
-                    implementing new technologies in real-world project tasks.</p>
-                </div>
-
-                <div class="experience-card">
-                    <h3>ALX</h3>
-                    <h3 class="skill-tg">SWE Foundations</h3>
-                    <span class="experience-date">August 2022 - January 2023</span>
-                    <p class="timeline-location">Skills learned: Git, Shell, C, Python</p>
-                    <p>I participated in the ALX Full Stack Developer program, which provided an intensive and hands-on learning experience. The program emphasized mastering foundational and advanced concepts 
-                    in software development through daily tasks and projects. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:lekanoyesunle@gmail.com"><p>lekanoyesunle@gmail.com</p></a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>(+234) 8142266856</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class='fab fa-linkedin-in'></i>
-                        </div>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/dyuuz" class="github"><p>Dyuuz</p></a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class='fab fa-twitter' ></i>
-                        </div>
-                        <div>
-                            <h3>X</h3>
-                            <a href="https://x.com/PearlAviz" class="github"><p>Dyuuz</p></a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div>
-                            <h3>GitHub</h3>
-                            <a href="https://github.com/Dyuuz" class="github"><p>Dyuuz</p></a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" id="submitBtn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <a href="#" class="logo">OYE<span></span></a>
-            <div class="social-links">
-                <a href="https://github.com/Dyuuz" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dyuuz" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://x.com/PearlAviz" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="http://medium.com/@lekanoyesunle" class="social-link"><i class="fab fa-medium-m"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Oyesunle Lekan. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Success Modal -->
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">
-                 <i class="fas fa-times-circle"></i>
-            </div>
-            <h3>Message Failed!</h3>
-            <p>Message failed to send. Please use the contact links to reach me directly.</p>
-            <button class="close-modal" id="closeModal">Close</button>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><div class="pulse"></div> Available for work</div>
+    <div class="typed-wrap"><span id="typed-text"></span><span class="blink"></span></div>
+    <h1 class="hero-name">Oyesunle<br><span class="accent">Lekan</span></h1>
+    <p class="hero-desc">
+      Building <span class="hl">scalable backend systems</span>, real-time data pipelines,
+      and <span class="hl">production-grade APIs</span> that hold up under pressure.
+      Based in Africa · Working globally.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
     </div>
-    <script src='JS/index.js' ></script>
+  </div>
+</section>
+
+<!-- FOUNDER BANNER -->
+<div class="founder-banner">
+  <div class="founder-left">
+    <div class="founder-label">Track Record</div>
+    <div class="founder-headline">Delivering quality results for<br><span>Founders across the globe.</span></div>
+  </div>
+  <div class="founder-stats">
+    <div class="founder-stat">
+      <div class="founder-stat-num">2<span class="founder-stat-unit">+</span></div>
+      <div class="founder-stat-label">Years of Experience</div>
+    </div>
+    <div class="founder-stat">
+      <div class="founder-stat-num">4.5<span class="founder-stat-unit">★</span></div>
+      <div class="founder-stat-label">Star Ratings</div>
+    </div>
+    <div class="founder-stat">
+      <div class="founder-stat-num">8<span class="founder-stat-unit">+</span></div>
+      <div class="founder-stat-label">Projects Completed</div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">02 — Technical Arsenal</div>
+  <h2 class="section-title reveal">What I work with</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Core</div>
+      <h3>Languages</h3>
+      <div class="skill-list"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Backend</div>
+      <h3>Frameworks</h3>
+      <div class="skill-list"><span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">WebSockets</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Infrastructure</div>
+      <h3>DevOps</h3>
+      <div class="skill-list"><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Linux</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Data</div>
+      <h3>Data Engineering</h3>
+      <div class="skill-list"><span class="tag">Real-Time Pipelines</span><span class="tag">API Aggregation</span><span class="tag">ML Workflow Integration</span><span class="tag">Data Ingestion</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Storage</div>
+      <h3>Databases</h3>
+      <div class="skill-list"><span class="tag">PostgreSQL</span><span class="tag">ORM Optimization</span><span class="tag">Performance Tuning</span><span class="tag">Relational Modeling</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-tag">Design</div>
+      <h3>Architecture</h3>
+      <div class="skill-list"><span class="tag">Microservices</span><span class="tag">Event-Driven</span><span class="tag">Caching strategies</span><span class="tag">Layered Architecture</span><span class="tag">System Design</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">03 — Work History</div>
+  <h2 class="section-title reveal">Where I've built</h2>
+  <div class="experience-list">
+
+    <div class="exp-item reveal">
+      <div class="exp-date">Dec 2025 – Present</div>
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Backend & Data Engineer</div>
+        <div class="exp-company">Freelance Contract</div>
+        <p class="exp-desc">Developed real-time data engineering and automation pipelines integrating high-frequency API
+        and WebSocket streams, implementing monitoring, conditional execution logic, caching
+        strategies, retry mechanisms, and structured logging to enable resilient, high-throughput
+        automated decision workflows with minimal event-processing delay.</p>
+        <span class="exp-badge">● Current</span>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">Jun 2025 – Feb 2026</div>
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Advanced Backend Engineering</div>
+        <div class="exp-company">ALX ProDev Program</div>
+        <p class="exp-desc">Built and deployed scalable backend systems and robust REST APIs with advanced ORM/SQL
+        optimization, authentication and middleware design, event-driven workflows, background job
+        scheduling, caching strategies, and Docker-based deployments with CI/CD integration.</p>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">Jun – Jul 2025</div>
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Backend Developer</div>
+        <div class="exp-company">Asian — Early-Stage Startup</div>
+        <p class="exp-desc">Engineered automated data pipeline and machine learning model workflows for a crypto
+            prediction system, utilizing AWS EC2 to enhance backend performance, improve overall system
+            efficiency, and reduce memory usage by 70%.</p>
+        <span class="exp-badge">↓ 70% memory usage</span>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">May – Jun 2025</div>
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Backend Developer</div>
+        <div class="exp-company">INSBRID — Early-Stage Startup · Saudi Arabia</div>
+        <p class="exp-desc">Designed and integrated REST APIs to manage vendors, drivers, customers, and end-to-end
+        order lifecycle workflows within a logistics platform, improving delivery accuracy and
+        operational efficiency.</p>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">Feb – Jun 2025</div>
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-role">Backend Development Intern</div>
+        <div class="exp-company">Don Clem Technology · UK</div>
+        <p class="exp-desc">Engineered secure, production-grade Django backend systems with RBAC-enforced REST APIs,
+        optimized relational query performance, and test-driven implementations to ensure scalability
+        and reliability.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">04 — Key Projects</div>
+  <h2 class="section-title reveal">Things I've built</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-num">01</div>
+      <div class="project-name">ALX Project Nexus</div>
+      <p class="project-desc">E-Commerce backend engineered with clear separation of concerns, secure authentication flows, transactional integrity, and scalability-oriented system design.</p>
+      <div class="project-tags">
+        <span class="project-tag">Django</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Auth Systems</span><span class="project-tag">REST API</span><span class="project-tag">CI/CD</span>
+        <!-- <span class="project-tag">Architecture</span><span class="project-tag">Performance</span><span class="project-tag">Security</span> -->
+      </div>
+
+      <div class="project-footer">
+        <div class="project-highlight">⁕ Core Architecture, Concurrency & integrity, Performance, Reliability & Security.</div>
+        <a href="https://github.com/Dyuuz/alx-project-nexus" target="_blank" class="project-link">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">02</div>
+      <div class="project-name">MindyBrows</div>
+      <p class="project-desc">Scalable booking and payment platform built on microservices with automated onboarding and real-time WhatsApp/Telegram notification workflows for seamless operations.</p>
+      <div class="project-tags">
+        <span class="project-tag">Microservices</span><span class="project-tag">Django</span><span class="project-tag">WhatsApp API</span><span class="project-tag">Payments</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-highlight">↓ Reduced administrative workload by 60%.</div>
+        <a href="https://mindybrows.onrender.com" target="_blank" class="project-link">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <div class="project-name">BlockSigma</div>
+      <p class="project-desc">Real-time ML crypto forecasting system with integrated data engineering and automated prediction pipelines. Processes high-frequency market signals with minimal latency using FastAPI.</p>
+      <div class="project-tags">
+        <span class="project-tag">FastAPI</span><span class="project-tag">ML Pipelines</span><span class="project-tag">Cloud Services</span><span class="project-tag">Real-Time Data</span><span class="project-tag">API Integrations</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-highlight">↓ Optimized memory usage by 70%.</div>
+        <a href="https://blocksigma-vyk5.onrender.com" target="_blank" class="project-link">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <div class="project-name">TechScape Blog</div>
+      <p class="project-desc">Django-based content platform with PostgreSQL and CKEditor5 for rich dynamic article publishing and editorial content management workflows.</p>
+      <div class="project-tags">
+        <span class="project-tag">Django</span><span class="project-tag">PostgreSQL</span><span class="project-tag">CKEditor5</span><span class="project-tag">CMS</span>
+      </div>
+      <div class="project-footer">
+        <div class="project-highlight">⁕ Content Creation & Publishing, Editorial & Role Management.</div>
+        <a href="https://techscape-9akf.onrender.com" target="_blank" class="project-link">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          View
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">05 — What I Offer</div>
+  <h2 class="section-title reveal">My Services</h2>
+  <p class="reveal" style="color:var(--muted);font-size:0.82rem;max-width:500px;margin-bottom:0;">From zero to production —I design and build scalable backend systems and the infrastructure that powers modern web platforms.</p>
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <div class="service-icon">⚙️</div>
+      <div class="service-num">01</div>
+      <div class="service-name">Backend System Design</div>
+      <p class="service-desc">Architecture design for scalable, maintainable systems — layered backends, microservices, event-driven workflows, and clean separation of concerns from day one.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🧩</div>
+      <div class="service-num">02</div>
+      <div class="service-name">REST API Development</div>
+      <p class="service-desc">Production-grade APIs with authentication, RBAC, rate limiting, versioning, and thorough test coverage. Built with Django or FastAPI to your spec.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🌐</div>
+      <div class="service-num">03</div>
+      <div class="service-name">Full-Stack Web Engineering</div>
+      <p class="service-desc">End-to-end web platforms combining scalable backend systems with modern frontend interfaces designed to evolve with your product.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🤖</div>
+      <div class="service-num">04</div>
+      <div class="service-name">Automation & Scripting</div>
+      <p class="service-desc">Event-driven and scheduled automation, background job pipelines, Python scripting, Selenium/Playwright workflows — reducing manual workload significantly.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">📡</div>
+      <div class="service-num">05</div>
+      <div class="service-name">Real-Time Data Pipelines</div>
+      <p class="service-desc">High-frequency data ingestion, WebSocket streams, API aggregation, and ML workflow integration — built for low-latency, high-throughput environments.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🔍</div>
+      <div class="service-num">06</div>
+      <div class="service-name">Database Optimization</div>
+      <p class="service-desc">PostgreSQL schema design, ORM query optimization, index tuning, and performance profiling to eliminate bottlenecks before they hit production.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">📊</div>
+      <div class="service-num">07</div>
+      <div class="service-name">Observability & System Monitoring</div>
+      <p class="service-desc">Structured logging, metrics tracking, performance monitoring, and production debugging workflows to maintain system health at scale using sentry, grafana etc</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🧪</div>
+      <div class="service-num">08</div>
+      <div class="service-name">System Testing & Quality Engineering</div>
+      <p class="service-desc">Unit testing, Integration testing, API contract testing, test automation pipelines, and reliability-driven development.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🐳</div>
+      <div class="service-num">09</div>
+      <div class="service-name">DevOps & Deployment</div>
+      <p class="service-desc">Containerized deployments with Docker, CI/CD pipelines via GitHub Actions, and monitoring — shipped reliably and repeatably.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">06 — Social Proof</div>
+  <h2 class="section-title reveal">What founders say</h2>
+  <div class="testi-grid">
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testi-quote">Lekan was contracted to build the backend for our logistics platform and delivered ahead of schedule. The APIs were cleanly structured, properly documented, and performed reliably at scale. Highly recommended.</p>
+      <div class="testi-author">
+        <span class="testi-name">Al Rahman</span>
+        <span class="testi-role">Founder, INSBRID · Saudi Arabia</span>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testi-quote">Lekan delivered multiple automation and live data pipeline projects with precision and speed. Each implementation was thoughtfully designed, well-documented, and capable of handling real-time workloads without instability.</p>
+      <div class="testi-author">
+        <span class="testi-name">Samuel E.</span>
+        <span class="testi-role">CEO, NG Startup</span>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testi-quote">Lekan delivered a clean and highly functional platform for my brand. The website is easy to navigate, and the automated booking and payment system significantly reduced my administrative workload. Managing student registrations is now seamless and efficient.</p>
+      <div class="testi-author">
+        <span class="testi-name">Olamide Ojo</span>
+        <span class="testi-role">CEO MindyBrows, NG</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">07 — Get In Touch</div>
+  <div class="contact-inner">
+    <h2 class="section-title reveal">Let's build something</h2>
+    <p class="reveal" style="color:var(--muted);font-size:0.8rem;margin:0.8rem 0 0;max-width:440px;">Open to backend engineering roles, freelance contracts, and interesting architecture problems.</p>
+    <div class="contact-grid">
+      <div class="contact-item reveal">
+        <span class="contact-item-label">Email</span>
+        <a href="mailto:lekanoyesunle@gmail.com">lekanoyesunle@gmail.com</a>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-item-label">Phone</span>
+        <a href="tel:+2348142266856">+234 814 226 6856</a>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-item-label">GitHub</span>
+        <a href="https://github.com/Dyuuz" target="_blank">github.com/Dyuuz</a>
+      </div>
+      <div class="contact-item reveal">
+        <span class="contact-item-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/dyuuz" target="_blank">linkedin.com/in/dyuuz</a>
+      </div>
+      <div class="contact-item reveal" style="grid-column:1/-1;">
+        <span class="contact-item-label">Portfolio</span>
+        <a href="https://lekanoyesunle.vercel.app" target="_blank">lekanoyesunle.vercel.app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 <span class="footer-green">Oyesunle Lekan</span></span>
+  <span>BSc Computer Science — FUNAAB &nbsp;·&nbsp; GMCPN Registered</span>
+</footer>
+
+<script src='JS/index.js' ></script>
 </body>
 </html>
