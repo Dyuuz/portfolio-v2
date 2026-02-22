@@ -1,127 +1,101 @@
-# portfolio-v2
+# Hi, I'm **Lekan Oyesunle** 👋  
 
-# Hi there, I'm **Lekan** 👋  
+Backend & Data Engineer focused on building scalable, service-oriented systems and real-time data workflows.
 
----
+I design production-grade backend architectures with clean separation of concerns, optimized relational data models, transactional integrity, and reliability-driven automation.
 
-💻 I specialize in **Backend Development in software applications**  
-📊 I've worked on **personal projects & internship projects**  
-📚 Equipped in **Advanced Django concepts & System Security and Scalability**  
-💡 Always eager to solve problems and optimize performance  
-🧑‍💻 Passionate about **Backend Development, AI, and Machine Learning**  
-
-## Portfolio 
-[Portfolio Link](https://lekanoyesunle.vercel.app)
+⚙️ Backend Systems Architecture  
+🌐 Full-Stack Web Engineering  
+📡 Real-Time Data Engineering  
+🧠 Event-Driven & Automation Workflows  
+🐳 Dockerized Deployments with CI/CD  
+🗄️ PostgreSQL Performance Optimization  
 
 ---
 
-## 🏆 Top Projects  
+## 🌐 Full-Stack Web Engineering
 
-### 🔐 **Data Vault System**  
-*A secure system for managing encrypted user data with unique access tokens.*  
-
-🔹 **Built with:** Django, Python, Cryptography  
-
-🔹 **Repo:** [Data Vault System](https://github.com/Dyuuz/Data-Vault)  
-
-### 🌍🚀 **Tech Scape**  
-*Your gateway to the evolving world of technology—covering software, hardware, AI, security, innovation, career tips, culture, and more. Stay updated, stay ahead!*  
-
-🔹 **Built with:** Django, Python, OAuth, Cloudinary, Jazzmin, postgreSQL.
-
-🔹 **Repo:** [TechScapeBlog](https://github.com/Dyuuz/Tech-Scape-Blog)
-
-📖 **Explore more on [TechScape](techscape-swlm.onrender.com)**  
-
-### 🌐🤖 **ChatBot API**
-
-*An AI-powered authentication and messaging API that grants users tokens upon signup, enabling AI-driven responses while deducting tokens per message sent. Seamless authentication, smart conversations, and efficient token management—all in one API!*
-
-🔹 Built with: Django, DRF, JWT, SqLite, OpenAI API, PostMan
-
-🔹 **Repo:** [ChatAPI](https://github.com/Dyuuz/ChatAPI)
-
-📖 **Explore [ChatAPI](https://chatapi-1e6w.onrender.com/)**  
+End-to-end web platforms combining scalable backend systems with modern frontend interfaces designed to evolve with your product.
 
 ---
 
-## 📝 Recent TechScape Blog Posts  
+## 🧠 Professional Experience
 
-📌 [xAI's Grok chatbot can now observe and interpret its surroundings.](https://techscape-swlm.onrender.com/Software/xais-grok-chatbot-can-now-observe-and-interpret-its-surroundings)  
-📌 [Suspended Columbia student raises $5.3M for an AI tool to cheat on everything.](https://techscape-swlm.onrender.com/Software/suspended-columbia-student-raises-53m-for-an-ai-tool-to-cheat-on-everything)  
-📌 [20 new tech unicorns have emerged in 2025.](https://techscape-swlm.onrender.com/News/20-new-tech-unicorns-have-emerged-in-2025)
+### Backend & Data Engineer (Freelance Contract)  
+Built and deployed scalable backend systems with:
 
-📖 **Read more on my [blog](techscape-swlm.onrender.com)**  
-
----
-
-## 🛠️ Languages & Tools  
-
-### **Programming Languages**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
-
-### **Web Development**  
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
-
-### **Frameworks & Libraries**  
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)  
-![Cryptography](https://img.shields.io/badge/Cryptography-6E9FBC?style=for-the-badge&logo=lock&logoColor=white)
-
-### **Databases & Cloud**  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)  
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
-
-### **DevOps & Tools**  
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)  
+- Advanced ORM & SQL optimization  
+- Authentication & middleware design  
+- Event-driven workflows  
+- Background job orchestration  
+- Caching strategies  
+- Docker + CI/CD delivery pipelines  
 
 ---
 
-## 📊 GitHub Stats  
-
-<div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Dyuuz&show_icons=true&theme=radical" alt="GitHub Stats" width="50%"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Dyuuz&theme=react-dark" alt="GitHub Activity Graph"/>
-</div>  
+### Backend Development Intern — Don Clem Technology (UK)  
+Engineered secure Django backend systems with RBAC-enforced REST APIs, optimized relational queries, and test-driven implementations to ensure scalability and reliability.
 
 ---
 
-## 🏆 **GitHub Achievements & Highlights**  
+### ALX ProDev — Advanced Backend Engineering  
+Developed real-time data pipelines integrating high-frequency APIs and WebSocket streams with:
 
-🌟 **Tech Explorer** – Always learning and exploring new technologies!  
-![Tech Explorer](https://img.shields.io/badge/Tech_Explorer-%F0%9F%8C%9F-blue?style=for-the-badge)  
-
-🛠️ **Django Maestro** – Crafting web applications with Django!  
-![Django Maestro](https://img.shields.io/badge/Django_Maestro-%F0%9F%9A%80-green?style=for-the-badge)  
-
-🔐 **Security Guardian** – Ensuring data privacy with encryption techniques!  
-![Security Guardian](https://img.shields.io/badge/Security_Guardian-%F0%9F%94%92-red?style=for-the-badge)  
-
-
-🤖 **AI Innovator** – Exploring AI-driven automation and intelligence!  
-![AI Innovator](https://img.shields.io/badge/AI_Innovator-%F0%9F%A4%96-purple?style=for-the-badge)  
-
-🔥 **Open Source Contributor** – Committed to improving and sharing knowledge!  
-![Open Source](https://img.shields.io/badge/Open_Source_Contributor-%E2%9C%A8-blueviolet?style=for-the-badge)
+- Monitoring & structured logging  
+- Conditional execution logic  
+- Retry mechanisms  
+- Low-latency event processing  
 
 ---
 
-## 🌐 Connect with Me  
+## 🚀 Featured Systems
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dyuuz)  
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/pearlaviz)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]()  
+### 🛒 ALX Project Nexus — E-Commerce Backend  
+Engineered a layered backend architecture centered on clear separation of concerns, secure authentication flows, transactional integrity, and scalability-oriented system design.
 
 ---
 
-## 🎯 Fun Fact  
-🔥 **I believe every problem has a pythonic solution**  
-🧑‍💻 **Python was my first love... and Django made it even stronger.**
+### 💄 MindyBrows — Microservices Booking Platform  
+Scalable booking and payment platform with automated onboarding and real-time WhatsApp/Telegram workflows.  
+Reduced administrative workload by **60%**.
 
---- 
+---
 
-### Want to collaborate or chat about ideas? **Let’s connect!** 🚀
+### 📈 BlockSigma — Real-Time ML Forecasting System  
+Integrated data engineering pipelines with automated prediction workflows using FastAPI.
+
+---
+
+### 📰 TechScape Blog  
+Django-based content platform with PostgreSQL and CKEditor5 for dynamic article publishing and structured content management.
+
+---
+
+## 🏅 Certifications
+
+- ALX ProDev — Advanced Backend Engineering (June 2025 – February 2026)  
+- Registered Computer Professional (GMCPN) — July 2025  
+
+---
+
+## 🛠 Technical Stack
+
+**Languages:** Python, JavaScript, SQL  
+**Frameworks:** Django, FastAPI  
+**Architecture:** System Design, Microservices, Layered Architecture, Caching, Event-Driven Systems  
+**Data Engineering:** Real-Time Pipelines, API Aggregation, ML Workflow Integration  
+**Databases:** PostgreSQL, Relational Data Modeling, Query Optimization  
+**DevOps:** Docker, CI/CD (GitHub Actions), AWS EC2  
+**Automation:** Event-Driven & Scheduled Automation, Selenium, Playwright  
+
+---
+
+## 🌐 Connect With Me
+
+- Portfolio: https://lekanoyesunle.vercel.app  
+- LinkedIn: https://www.linkedin.com/in/dyuuz  
+- GitHub: https://github.com/Dyuuz  
+
+---
+
+> Engineering scalable systems. Designing for production. Building for evolution.
