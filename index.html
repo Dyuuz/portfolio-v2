@@ -74,7 +74,16 @@
 <nav>
   <div class="nav-logo">Lekan<span>.dev</span></div>
   <ul class="nav-links">
-    <li class="nav-resume"><a href='/resume/LekanOye26_Feb.pdf' download>Resume</a></li>
+    <li class="nav-resume">
+      <a href="/resume/LekanOye26_Feb.pdf"
+        download
+        onclick="gtag('event', 'resume_download', {
+          event_category: 'engagement',
+          event_label: 'Navbar Resume'
+        });">
+        Resume
+      </a>
+    </li>
     <li class="nav-link"><a href="#skills" >Skills</a></li>
     <li class="nav-link"><a href="#experience">Experience</a></li>
     <li class="nav-link"><a href="#projects">Projects</a></li>
