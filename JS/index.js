@@ -20,7 +20,7 @@ document.querySelectorAll('a,.project-card,.skill-card,.service-card,.testi-card
 });
 
 // Typing
-const phrases=['Backend & Data Engineer_','System Architect_','API Designer_','Pipeline Builder_'];
+const phrases=['Backend & Data Engineer_','API Systems Engineer_','Solutions Architect__','Pipeline Builder_','Automation Engineer_',];
 let pi=0,ci=0,deleting=false;
 const typedEl=document.getElementById('typed-text');
 function type(){
