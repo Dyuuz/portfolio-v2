@@ -37,39 +37,3 @@ const obs=new IntersectionObserver(entries=>{
 entries.forEach((e,i)=>{ if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);} });
 },{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Animate founder stats on scroll
-function animateCount(el, target, decimals=0, suffix=''){
-let start=0; const dur=1800; const step=16;
-const inc=target/(dur/step);
-const timer=setInterval(()=>{
-    start=Math.min(start+inc,target);
-    el.textContent=(decimals?start.toFixed(1):Math.floor(start))+suffix;
-    if(start>=target) clearInterval(timer);
-},step);
-}
-const founderObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      document.querySelectorAll('.stat-count').forEach(el => {
-        const target   = parseFloat(el.dataset.target);
-        const decimals = parseInt(el.dataset.decimals);
-        const dur      = 1800;
-        const step     = 16;
-        const inc      = target / (dur / step);
-        let current    = 0;
-
-        const timer = setInterval(() => {
-          current = Math.min(current + inc, target);
-          el.textContent = decimals ? current.toFixed(1) : Math.floor(current);
-          if (current >= target) clearInterval(timer);
-        }, step);
-      });
-
-      founderObs.disconnect();
-    }
-  });
-}, { threshold: 0.3 });
-
-const banner = document.querySelector('.founder-banner');
-if (banner) founderObs.observe(banner);
