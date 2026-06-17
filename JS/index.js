@@ -48,25 +48,25 @@ const timer=setInterval(()=>{
     if(start>=target) clearInterval(timer);
 },step);
 }
-const founderObs=new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-    if(e.isIntersecting){
-    document.querySelectorAll('.founder-stat-num').forEach(el=>{
-        const txt=el.textContent;
-        if(txt.includes('2')&&txt.includes('+')){
-        el.innerHTML='<span id="c1">0</span><span class="founder-stat-unit">+</span>';
-        animateCount(document.getElementById('c1'),2);
-        } else if(txt.includes('4.5')){
-        el.innerHTML='<span id="c2">0.0</span><span class="founder-stat-unit">★</span>';
-        animateCount(document.getElementById('c2'),4.5,1);
-        } else if(txt.includes('8')){
-        el.innerHTML='<span id="c3">0</span><span class="founder-stat-unit">+</span>';
-        animateCount(document.getElementById('c3'),8);
-        }
-    });
-    founderObs.disconnect();
+const founderObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const stats = [
+        { id: 'c1', target: 2,   decimals: 0, unit: '+' },
+        { id: 'c2', target: 4.5, decimals: 1, unit: '★' },
+        { id: 'c3', target: 8,   decimals: 0, unit: '+' },
+      ];
+
+      document.querySelectorAll('.founder-stat-num').forEach((el, i) => {
+        const { id, target, decimals, unit } = stats[i];
+        el.innerHTML = `<span id="${id}">0${decimals ? '.0' : ''}</span><span class="founder-stat-unit">${unit}</span>`;
+        animateCount(document.getElementById(id), target, decimals);
+      });
+
+      founderObs.disconnect();
     }
-});
-},{threshold:0.3});
-const banner=document.querySelector('.founder-banner');
-if(banner) founderObs.observe(banner);
+  });
+}, { threshold: 0.3 });
+
+const banner = document.querySelector('.founder-banner');
+if (banner) founderObs.observe(banner);
