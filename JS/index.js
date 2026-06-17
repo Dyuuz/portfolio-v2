@@ -51,16 +51,19 @@ const timer=setInterval(()=>{
 const founderObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      const stats = [
-        { id: 'c1', target: 2,   decimals: 0, unit: '+' },
-        { id: 'c2', target: 4.5, decimals: 1, unit: '★' },
-        { id: 'c3', target: 8,   decimals: 0, unit: '+' },
-      ];
+      document.querySelectorAll('.stat-count').forEach(el => {
+        const target   = parseFloat(el.dataset.target);
+        const decimals = parseInt(el.dataset.decimals);
+        const dur      = 1800;
+        const step     = 16;
+        const inc      = target / (dur / step);
+        let current    = 0;
 
-      document.querySelectorAll('.founder-stat-num').forEach((el, i) => {
-        const { id, target, decimals, unit } = stats[i];
-        el.innerHTML = `<span id="${id}">0${decimals ? '.0' : ''}</span><span class="founder-stat-unit">${unit}</span>`;
-        animateCount(document.getElementById(id), target, decimals);
+        const timer = setInterval(() => {
+          current = Math.min(current + inc, target);
+          el.textContent = decimals ? current.toFixed(1) : Math.floor(current);
+          if (current >= target) clearInterval(timer);
+        }, step);
       });
 
       founderObs.disconnect();
