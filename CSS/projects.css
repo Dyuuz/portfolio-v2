@@ -256,7 +256,7 @@ body {
 .lightbox-counter {
   margin-top: 1.2rem;
   font-size: 0.64rem;
-  color: var(--muted-dim);
+  color: var(--text);
   letter-spacing: 0.14em;
   text-align: center;
 }
