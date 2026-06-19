@@ -85,7 +85,7 @@ body {
 
 .page-desc {
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--text);
   max-width: 720px;
   line-height: 1.9;
 }
