@@ -1,9 +1,9 @@
 {
   "rewrites": [
     { "source": "/project/data-systems", "destination": "/Projects/data_engineering.html" },
-    { "source": "/project/alx-nexus", "destination": "/Projects/alx_nexus.html" },
+    { "source": "/project/alx-project-nexus", "destination": "/Projects/alx_nexus.html" },
     { "source": "/project/blocksigma", "destination": "/Projects/blocksigma.html" },
-    { "source": "/project/mindy-brows", "destination": "/Projects/mindy_brows.html" },
+    { "source": "/project/mindybrows", "destination": "/Projects/mindy_brows.html" },
     { "source": "/project/techscape", "destination": "/Projects/techscape.html" }
   ]
 }
