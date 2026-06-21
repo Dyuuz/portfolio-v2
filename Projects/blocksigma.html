@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <title>ALX Project Nexus | Olamilekan Oyesunle</title>
+  <title>BlockSigma | Olamilekan Oyesunle</title>
   <meta name="description" content="ALX Project Nexus — a production-grade ecommerce API and web platform engineered by Olamilekan Oyesunle." />
   <meta property="og:title" content="ALX Project Nexus — Olamilekan Oyesunle" />
   <meta property="og:description" content="Production-grade ecommerce API and web platform. Built with Django, REST APIs, and PostgreSQL." />
@@ -28,14 +28,14 @@
 
   <header class="project-header">
     <div class="project-topics">
-      <span class="topic-tag">Ecommerce</span>
-      <span class="topic-tag">APIs</span>
-      <span class="topic-tag">WebApp</span>
+      <span class="topic-tag">Crypto Analytics API</span>
+      <span class="topic-tag">Data Pipeline</span>
+      <span class="topic-tag">ML</span>
     </div>
     <h1 class="project-title">Block<span>Sigma</span></h1>
     <p class="project-tagline">
-      A production-grade ecommerce API and backend platform engineered for scale.<br>
-      Clean architecture, reliable data flow, and a storefront built to convert.
+      Real-time ML crypto forecasting system with integrated data engineering and automated prediction pipelines. 
+      Processes high-frequency market signals with minimal latency using FastAPI.
     </p>
     <a href="https://blocksigma-vyk5.onrender.com/" target="_blank" class="btn-live">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -43,14 +43,17 @@
     </a>
   </header>
 
-  <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="ALX Project Nexus" class="project-hero-img" loading="lazy"/>
+  <img src="/img/projects/blocksigma/main.jpg" alt="ALX Project Nexus" class="project-hero-img" loading="lazy"/>
 
   <div class="project-section">
     <div class="section-label">Overview</div>
     <h2 class="section-heading">Project Overview</h2>
     <div class="project-overview-text">
-      <p>ALX Project Nexus is a full-stack ecommerce platform built to handle real-world product catalogues, order management, and payment processing at scale. The backend is engineered with Django and Django REST Framework, exposing a clean, versioned API consumed by a responsive frontend.</p>
-      <p>The system handles user authentication, product inventory, cart management, order lifecycle, and payment gateway integration — with structured logging, test coverage, and a CI/CD pipeline shipping to production reliably on every merge.</p>
+        <p>BlockSigma is a cryptocurrency prediction system built to help traders track and anticipate price movement across active USDT trading pairs on Binance. It generates price predictions on two timeframes, 4-hour and 12-hour, using LSTM and XGBoost models trained on live market data, giving users a data-driven view of where an asset's price may be headed next.</p>
+        <p>The platform is built around accuracy, transparency, and continuous tracking. Predictions are generated on a recurring schedule and checked against real-time prices every 30 seconds to determine whether each prediction was reached. Technical indicators including RSI, MACD, StochRSI, and EMA feed into both the prediction models and a separate signal system that flags buy, sell, and hold conditions. Accuracy is tracked and summarized over time, so performance isn't just claimed, it's measurable and visible on the dashboard.</p>
+        <p>Use cases include: crypto price prediction tracking, technical-indicator-based trading signals, prediction accuracy monitoring, and automated asset/price data pipelines.</p>
+        <p>Current status: Prediction generation (4hr/12hr), accuracy tracking and summaries, the live dashboard, and the price-tracking pipeline are complete. Trading signal generation and email notifications are ready to be integrated for use for clients.</p>
+        <p>BlockSigma is best positioned as a practical analytics tool for traders who want model-backed price predictions with visible, trackable accuracy, not a black box, but a system that shows its own track record.</p>
     </div>
   </div>
 
@@ -58,16 +61,16 @@
     <div class="section-label">Architecture</div>
     <h2 class="section-heading">System Design Illustration</h2>
     <div class="gallery-grid" data-gallery="arch">
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="System architecture overview">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="System architecture overview" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/system_design.jpg" data-alt="System architecture overview">
+        <img src="/img/projects/blocksigma/system_design.jpg" alt="System architecture overview" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="API layer design">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="API layer design" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/forecast.jpg" data-alt="API layer design">
+        <img src="/img/projects/blocksigma/forecast.jpg" alt="API layer design" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Database schema">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Database schema" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/refresh.jpg" data-alt="Database schema">
+        <img src="/img/projects/blocksigma/refresh.jpg" alt="Database schema" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
     </div>
@@ -77,24 +80,36 @@
     <div class="section-label">Interface</div>
     <h2 class="section-heading">Screenshots</h2>
     <div class="gallery-grid" data-gallery="screens">
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Homepa">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Homepage" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/12hpage1.jpg" data-alt="12hr Predictions - 1">
+        <img src="/img/projects/blocksigma/12hpage1.jpg" alt="12hr Predictions - 1" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Product listing">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Product listing" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/12hpage2.jpg" data-alt="12hr Predictions - 2">
+        <img src="/img/projects/blocksigma/12hpage2.jpg" alt="12hr Predictions - 2" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Checkout flow">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Checkout flow" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/4hpage1.jpg" data-alt="4hr Predictions - 1">
+        <img src="/img/projects/blocksigma/4hpage1.jpg" alt="4hr Predictions - 1" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Admin dashboard">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Admin dashboard" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/4hpage2.jpg" data-alt="4hr Predictions - 2">
+        <img src="/img/projects/blocksigma/4hpage2.jpg" alt="4hr Predictions - 2" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
-      <div class="gallery-item" data-src="/img/projects/blocksigma/BlockSigma.jpg" data-alt="Admin dashboard">
-        <img src="/img/projects/blocksigma/BlockSigma.jpg" alt="Admin dashboard" loading="lazy"/>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/12h_data.jpg" data-alt="12hr Predictions Accuracy Records">
+        <img src="/img/projects/blocksigma/12h_data.jpg" alt="12hr Predictions Accuracy Records" loading="lazy"/>
+        <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/12h_buy_data.jpg" data-alt="12hr Buy Predictions Accuracy Records">
+        <img src="/img/projects/blocksigma/12h_buy_data.jpg" alt="12hr Buy Predictions Accuracy Records" loading="lazy"/>
+        <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/4h_data.jpg" data-alt="4hr Predictions Accuracy Records">
+        <img src="/img/projects/blocksigma/4h_data.jpg" alt="4hr Predictions Accuracy Records" loading="lazy"/>
+        <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
+      </div>
+      <div class="gallery-item" data-src="/img/projects/blocksigma/4h_buy_data.jpg" data-alt="4hr Buy Predictions Accuracy Records">
+        <img src="/img/projects/blocksigma/4h_buy_data.jpg" alt="4hr Buy Predictions Accuracy Records" loading="lazy"/>
         <div class="gallery-item-overlay"><span class="gallery-zoom-icon">⊕</span></div>
       </div>
     </div>
@@ -130,7 +145,7 @@
         <a href="/project/mindybrows">MindyBrows</a>
         <a href="/project/blocksigma">BlockSigma</a>
         <a href="/project/techscape">TechScape</a>
-        <a href="/data-engineering">Data Engineering</a>
+        <a href="/data-systems">Data Systems</a>
       </nav>
     </div>
     <div>
