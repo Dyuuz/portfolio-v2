@@ -387,3 +387,27 @@ body {
 @media (max-width: 480px) {
   .project-footer { grid-template-columns: 1fr; }
 }
+
+.project-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1.6rem;
+  font-weight: 700;
+  transition: color 0.2s, border-color 0.2s;
+}
+.btn-github:hover { color: var(--green); border-color: var(--green); }
