@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/avatar.jpeg">
   <link rel='stylesheet' type='text/css' href='/CSS/data_systems.css'>
-  
     <title>Data Engineering Projects | Olamilekan Oyesunle</title>
     <meta name="description" content="Systems that move, transform & act on data. Real-time pipelines, transaction systems, web automation, and event-driven data infrastructure." />
     <meta name="author" content="Olamilekan Oyesunle">
@@ -32,7 +31,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-55TB5JM8K6');
     </script>
 
@@ -67,295 +65,248 @@
     </a>
     <div class="page-eyebrow"><span class="pulse"></span> Data Systems</div>
     <h1 class="page-title">Systems that <span>move</span>,<br><span>transform</span> & <span>act</span> on data.</h1>
-   <p class="page-desc">
-        The cost of poor data infrastructure rarely shows up on day one. It appears when the pipeline lags behind real-time 
-        demand, when the automation breaks unexpectedly, when the execution system drifts under load, and other similar failure 
-        points. My work focuses on building backend systems that stay reliable at scale, with clean architecture, fast data 
-        ingestion, efficient processing, and dependable execution at every stage. If you need a solution built, your business context 
+    <p class="page-desc">
+        The cost of poor data infrastructure rarely shows up on day one. It appears when the pipeline lags behind real-time
+        demand, when the automation breaks unexpectedly, when the execution system drifts under load, and other similar failure
+        points. My work focuses on building backend systems that stay reliable at scale, with clean architecture, fast data
+        ingestion, efficient processing, and dependable execution at every stage. If you need a solution built, your business context
         defines everything from architecture to delivery and you get a system that your team can own, extend, and trust in production.
     </p>
   </header>
 
-  <div class="project-list">
-    <div class="coming-soon">
-        <span class="cs-dot"></span>
-        Projects will be published soon.
-    </div>
-
-    <!-- <!== 01 ==>
-    <div class="project-item">
-      <div class="item-num">01</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Multi-Sportsbook Arbitrage Detection System</div>
-        </div>
-        <p class="item-desc">Distributed real-time scanner consuming simultaneous WebSocket streams from Bovada, BC.Game, and BetRivers. Normalises event identifiers across books, detects cross-book price divergences, and eliminates duplicate processing under concurrent stream conditions using line-level locking.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="img/portfolio/mindy_class.jpg" alt="Arbitrage system overview" loading="lazy"/>
-              <img src="img/portfolio/mindy_class.jpg" alt="WebSocket stream output" loading="lazy"/>
-              <img src="img/portfolio/mindy_class.jpg" alt="Deduplication logic" loading="lazy"/>
-              <img src="img/portfolio/mindy_class.jpg" alt="Deduplication logic" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Architecture · Stream output · Dedup logic</span>
-            <span class="img-counter">1 / 3</span>
+  <div class="project-grid">
+    <article class="project-card" data-href="/project/arbitrage-detection-engine">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="/img/projects/alx_nexus/alx_nexus2.jpg" alt="Arbitrage system overview" loading="lazy"/>
+            <img src="img/portfolio/mindy_class.jpg" alt="WebSocket stream output" loading="lazy"/>
+            <img src="img/portfolio/mindy_class.jpg" alt="Deduplication logic" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
-          <span class="tag">Python</span><span class="tag">WebSockets</span><span class="tag">Concurrency</span>
-          <span class="tag">Deduplication</span><span class="tag">Real-Time Streams</span><span class="tag">Event Normalisation</span>
-        </div>
-        <div class="item-stat">⁕ 3 live streams · Sub-second detection · Zero duplicate triggers</div>
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
       </div>
-    </div>
-
-    <!== 02 ==>
-    <div class="project-item">
-      <div class="item-num">02</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">BlockSigma — Crypto Prediction Pipeline</div>
-          <a href="https://blocksigma-vyk5.onrender.com" target="_blank" class="item-link">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Live
-          </a>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">01</span>
+          <h2 class="card-name">Real-Time Sports Betting Arbitrage Engine</h2>
         </div>
-        <p class="item-desc">High-frequency market signal ingestion, feature engineering, and ML model integration served via FastAPI. Pipeline restructuring and lazy loading strategies reduced memory consumption by 70% on AWS EC2.</p>
+        <p class="card-desc">A WebSocket-driven arbitrage detection system that streams live odds across multiple sportsbooks, matches opposing prices in real time, and auto-verifies opportunities via REST before logging them — with dual-logger observability and Google Sheets persistence.</p>
+        <div class="card-tags">
+          <span class="tag">Python</span><span class="tag">WebSockets</span><span class="tag">REST Verification</span>
+          <span class="tag">Deduplication</span><span class="tag">Google Sheets API</span>
+        </div>
+        <div class="card-stat">3 sportsbooks, dual-verified arbs, zero duplicate triggers</div>
+        <a href="/project/arbitrage-detection-engine" class="card-link no-nav">Read the full write-up</a>
+      </div>
+    </article>
 
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/blocksigma-1.png" alt="BlockSigma dashboard" loading="lazy"/>
-              <img src="assets/de/blocksigma-2.png" alt="Pipeline architecture" loading="lazy"/>
-              <img src="assets/de/blocksigma-3.png" alt="Prediction output" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Dashboard · Pipeline · Predictions</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/blocksigma-crypto-prediction-pipeline">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/blocksigma-1.png" alt="BlockSigma dashboard" loading="lazy"/>
+            <img src="assets/de/blocksigma-2.png" alt="Pipeline architecture" loading="lazy"/>
+            <img src="assets/de/blocksigma-3.png" alt="Prediction output" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+        <a href="https://blocksigma-vyk5.onrender.com" target="_blank" class="live-badge no-nav">Live</a>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">02</span>
+          <h2 class="card-name">BlockSigma — Crypto Prediction Pipeline</h2>
+        </div>
+        <p class="card-desc">High-frequency market signal ingestion, feature engineering, and ML model integration served via FastAPI. Pipeline restructuring and lazy loading strategies reduced memory consumption by 70% on AWS EC2.</p>
+        <div class="card-tags">
           <span class="tag">FastAPI</span><span class="tag">ML Pipelines</span><span class="tag">AWS EC2</span>
-          <span class="tag">Real-Time Data</span><span class="tag">Memory Optimisation</span><span class="tag">API Integration</span>
+          <span class="tag">Memory Optimisation</span>
         </div>
-        <div class="item-stat">↓ 70% memory reduction on EC2</div>
+        <div class="card-stat">70% memory reduction on EC2</div>
+        <a href="/project/blocksigma-crypto-prediction-pipeline" class="card-link no-nav">Read the full write-up</a>
       </div>
-    </div>
+    </article>
 
-    <!== 03 ==>
-    <div class="project-item">
-      <div class="item-num">03</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Live Odds WebSocket Aggregator</div>
-        </div>
-        <p class="item-desc">Constructs dynamic WebSocket URLs across multiple betting markets — match winner, over/under, BTTS, Asian handicap. Manages session lifecycle, reconnection logic, and price reconciliation between WebSocket streams and REST fallback endpoints to guarantee consistency under dropout.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/odds-1.png" alt="Odds feed terminal" loading="lazy"/>
-              <img src="assets/de/odds-2.png" alt="Market URL builder" loading="lazy"/>
-              <img src="assets/de/odds-3.png" alt="Reconciliation output" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Live feed · URL builder · Reconciliation</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/live-odds-websocket-aggregator">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/odds-1.png" alt="Odds feed terminal" loading="lazy"/>
+            <img src="assets/de/odds-2.png" alt="Market URL builder" loading="lazy"/>
+            <img src="assets/de/odds-3.png" alt="Reconciliation output" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">03</span>
+          <h2 class="card-name">Live Odds WebSocket Aggregator</h2>
+        </div>
+        <p class="card-desc">Constructs dynamic WebSocket URLs across multiple betting markets — match winner, over/under, BTTS, Asian handicap. Manages session lifecycle, reconnection logic, and price reconciliation between WebSocket streams and REST fallback endpoints to guarantee consistency under dropout.</p>
+        <div class="card-tags">
           <span class="tag">Python</span><span class="tag">WebSockets</span><span class="tag">REST Fallback</span>
-          <span class="tag">Reconnection Logic</span><span class="tag">Data Reconciliation</span><span class="tag">Football Markets</span>
+          <span class="tag">Data Reconciliation</span>
         </div>
-        <div class="item-stat">⁕ 10+ markets · Auto-reconnect · WS/REST reconciliation</div>
+        <div class="card-stat">10+ markets, auto-reconnect, WS/REST reconciliation</div>
+        <a href="/project/live-odds-websocket-aggregator" class="card-link no-nav">Read the full write-up</a>
       </div>
-    </div>
+    </article>
 
-    <!== 04 ==>
-    <div class="project-item">
-      <div class="item-num">04</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Nigerian Bank Name Fuzzy Resolver</div>
-        </div>
-        <p class="item-desc">Domain-specific NLP-adjacent matching for a fintech payments backend. Resolves informal, abbreviated, and misspelled Nigerian bank names (GTB, Opay, Kuda, etc.) using a curated alias dictionary and fuzzy scoring, then validates against Paystack's /bank/resolve endpoint in real time.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/bank-1.png" alt="Alias dictionary" loading="lazy"/>
-              <img src="assets/de/bank-2.png" alt="Fuzzy match output" loading="lazy"/>
-              <img src="assets/de/bank-3.png" alt="Paystack resolution" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Alias dict · Fuzzy match · Paystack resolve</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/nigerian-bank-fuzzy-resolver">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/bank-1.png" alt="Alias dictionary" loading="lazy"/>
+            <img src="assets/de/bank-2.png" alt="Fuzzy match output" loading="lazy"/>
+            <img src="assets/de/bank-3.png" alt="Paystack resolution" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">04</span>
+          <h2 class="card-name">Nigerian Bank Name Fuzzy Resolver</h2>
+        </div>
+        <p class="card-desc">Domain-specific NLP-adjacent matching for a fintech payments backend. Resolves informal, abbreviated, and misspelled Nigerian bank names (GTB, Opay, Kuda, etc.) using a curated alias dictionary and fuzzy scoring, then validates against Paystack's /bank/resolve endpoint in real time.</p>
+        <div class="card-tags">
           <span class="tag">Python</span><span class="tag">Fuzzy Matching</span><span class="tag">Django REST</span>
-          <span class="tag">Paystack API</span><span class="tag">Domain Logic</span><span class="tag">Fintech</span>
+          <span class="tag">Paystack API</span>
         </div>
-        <div class="item-stat">⁕ 40+ banks & fintechs · Real-time account validation</div>
+        <div class="card-stat">40+ banks & fintechs, real-time account validation</div>
+        <a href="/project/nigerian-bank-fuzzy-resolver" class="card-link no-nav">Read the full write-up</a>
       </div>
-    </div>
+    </article>
 
-    <!== 05 ==>
-    <div class="project-item">
-      <div class="item-num">05</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Multi-Gateway Payments Backend</div>
-        </div>
-        <p class="item-desc">Production payments layer supporting Paystack and Flutterwave behind a unified interface. Handles full transaction lifecycle, webhook signature verification, idempotency key enforcement, retry logic with exponential backoff, and structured audit logging.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/pay-1.png" alt="Payment flow" loading="lazy"/>
-              <img src="assets/de/pay-2.png" alt="Webhook handler" loading="lazy"/>
-              <img src="assets/de/pay-3.png" alt="Audit log" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Payment flow · Webhook · Audit log</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/multi-gateway-payments-backend">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/pay-1.png" alt="Payment flow" loading="lazy"/>
+            <img src="assets/de/pay-2.png" alt="Webhook handler" loading="lazy"/>
+            <img src="assets/de/pay-3.png" alt="Audit log" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">05</span>
+          <h2 class="card-name">Multi-Gateway Payments Backend</h2>
+        </div>
+        <p class="card-desc">Production payments layer supporting Paystack and Flutterwave behind a unified interface. Handles full transaction lifecycle, webhook signature verification, idempotency key enforcement, retry logic with exponential backoff, and structured audit logging.</p>
+        <div class="card-tags">
           <span class="tag">Django</span><span class="tag">Paystack</span><span class="tag">Flutterwave</span>
-          <span class="tag">Webhooks</span><span class="tag">Idempotency</span><span class="tag">Transaction Integrity</span>
+          <span class="tag">Idempotency</span>
         </div>
-        <div class="item-stat">⁕ Dual-gateway · Webhook-verified · Idempotent writes</div>
+        <div class="card-stat">Dual-gateway, webhook-verified, idempotent writes</div>
+        <a href="/project/multi-gateway-payments-backend" class="card-link no-nav">Read the full write-up</a>
       </div>
-    </div>
+    </article>
 
-    <!== 06 ==>
-    <div class="project-item">
-      <div class="item-num">06</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Playwright Betting Platform Automation</div>
-        </div>
-        <p class="item-desc">Unattended browser automation targeting MadMarket and Blogabet. Implements persistent session management via storage_state serialisation, automatic expiry detection and re-login, WebSocket price validation before execution, and Google Sheets flushing for audit trails.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/playwright-1.png" alt="Browser session" loading="lazy"/>
-              <img src="assets/de/playwright-2.png" alt="Re-login flow" loading="lazy"/>
-              <img src="assets/de/playwright-3.png" alt="Sheets audit log" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>Session · Re-login · Sheets log</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/playwright-betting-automation">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/playwright-1.png" alt="Browser session" loading="lazy"/>
+            <img src="assets/de/playwright-2.png" alt="Re-login flow" loading="lazy"/>
+            <img src="assets/de/playwright-3.png" alt="Sheets audit log" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+      </div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">06</span>
+          <h2 class="card-name">Playwright Betting Platform Automation</h2>
+        </div>
+        <p class="card-desc">Unattended browser automation targeting MadMarket and Blogabet. Implements persistent session management via storage_state serialisation, automatic expiry detection and re-login, WebSocket price validation before execution, and Google Sheets flushing for audit trails.</p>
+        <div class="card-tags">
           <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">Session Management</span>
-          <span class="tag">Google Sheets API</span><span class="tag">Auto Re-login</span><span class="tag">Unattended Ops</span>
+          <span class="tag">Auto Re-login</span>
         </div>
-        <div class="item-stat">⁕ Unattended · Session-persistent · Audit-logged</div>
+        <div class="card-stat">Unattended, session-persistent, audit-logged</div>
+        <a href="/project/playwright-betting-automation" class="card-link no-nav">Read the full write-up</a>
       </div>
-    </div>
+    </article>
 
-    <!== 07 ==>
-    <div class="project-item">
-      <div class="item-num">07</div>
-      <div class="item-body">
-        <div class="item-top">
-          <div class="item-name">Notification & Messaging Agent System</div>
-          <a href="https://mindybrows.onrender.com" target="_blank" class="item-link">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Live
-          </a>
-        </div>
-        <p class="item-desc">Event-driven messaging agent decoupled from business logic via Celery task queues. Dispatches real-time WhatsApp and Telegram notifications on booking lifecycle events with templated rendering per recipient context, retry policies, and delivery failure handling.</p>
-
-        <div class="img-carousel" data-index="0">
-          <div class="img-track-wrap">
-            <div class="img-track">
-              <img src="assets/de/agent-1.png" alt="Agent system overview" loading="lazy"/>
-              <img src="assets/de/agent-2.png" alt="Celery queue" loading="lazy"/>
-              <img src="assets/de/agent-3.png" alt="WhatsApp delivery" loading="lazy"/>
-            </div>
-          </div>
-          <button class="img-btn prev" aria-label="Previous">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <button class="img-btn next" aria-label="Next">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-          <div class="img-dots"></div>
-          <div class="img-caption">
-            <span>System · Queue · Delivery</span>
-            <span class="img-counter">1 / 3</span>
+    <article class="project-card" data-href="/project/notification-messaging-agent-system">
+      <div class="card-media img-carousel" data-index="0">
+        <div class="img-track-wrap">
+          <div class="img-track">
+            <img src="assets/de/agent-1.png" alt="Agent system overview" loading="lazy"/>
+            <img src="assets/de/agent-2.png" alt="Celery queue" loading="lazy"/>
+            <img src="assets/de/agent-3.png" alt="WhatsApp delivery" loading="lazy"/>
           </div>
         </div>
-
-        <div class="item-tags">
-          <span class="tag">Django</span><span class="tag">Celery</span><span class="tag">WhatsApp API</span>
-          <span class="tag">Telegram API</span><span class="tag">Event-Driven</span><span class="tag">Retry Policies</span>
-        </div>
-        <div class="item-stat">↓ 60% reduction in administrative workload</div>
+        <button class="img-btn prev no-nav" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="img-btn next no-nav" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="img-dots no-nav"></div>
+        <div class="img-counter">1 / 3</div>
+        <a href="https://mindybrows.onrender.com" target="_blank" class="live-badge no-nav">Live</a>
       </div>
-    </div> -->
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-num">07</span>
+          <h2 class="card-name">Notification & Messaging Agent System</h2>
+        </div>
+        <p class="card-desc">Event-driven messaging agent decoupled from business logic via Celery task queues. Dispatches real-time WhatsApp and Telegram notifications on booking lifecycle events with templated rendering per recipient context, retry policies, and delivery failure handling.</p>
+        <div class="card-tags">
+          <span class="tag">Django</span><span class="tag">Celery</span><span class="tag">Event-Driven</span>
+          <span class="tag">Retry Policies</span>
+        </div>
+        <div class="card-stat">60% reduction in administrative workload</div>
+        <a href="/project/notification-messaging-agent-system" class="card-link no-nav">Read the full write-up</a>
+      </div>
+    </article>
 
   </div>
 
