@@ -1,5 +1,5 @@
 // Typing
-const phrases=['Backend & Data Engineer_','API Systems Engineer_','Solutions Architect_','Pipeline Builder_','Automation Engineer_',];
+const phrases=['Backend & Data Engineer_','API Systems Engineer_','Systems Architect_','Pipeline Builder_','Automation Engineer_',];
 let pi=0,ci=0,deleting=false;
 const typedEl=document.getElementById('typed-text');
 function type(){
